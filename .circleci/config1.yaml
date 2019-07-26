@@ -17,7 +17,7 @@ jobs:
               awscli==1.11.76
             curl -fL https://getcli.jfrog.io | sh
             ./jfrog rt config --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_PASSWORD --interactive=false
-#       - restore_cache:
+#       - restore_cache: tryniw
 #           keys:
 #             - v1-{{ .Branch }}
 #           paths:
